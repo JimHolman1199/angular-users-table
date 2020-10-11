@@ -1,0 +1,5 @@
+<td appRemoveBorder *ngIf="!getType()">{{value}}</td>
+<td appRemoveBorder *ngIf="getType()" class="row" style="width: 200px">
+    <button class="btn btn-danger" (click)="onDeleteUser(value)">X</button>
+    <button class="btn btn-warning" (click)="onEditUser(value)">Edit user</button>    
+</td>

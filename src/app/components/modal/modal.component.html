@@ -1,0 +1,8 @@
+<div *ngIf="isModalOpen">
+  <div class="backdrop">
+    <div class="alert-box">
+      <app-user-edit-form #userEditForm></app-user-edit-form>
+      <app-user-form (closeModal)="onClose()" *ngIf="!userEditForm.user"></app-user-form>
+    </div>
+  </div>
+</div>

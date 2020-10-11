@@ -1,0 +1,14 @@
+<thead>
+    <tr>
+        <th>name</th>
+        <th>username</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>website</th>
+        <th>Action</th>
+    </tr>
+</thead>
+<tbody>
+    <tr app-tr [user]="user" *ngFor="let user of users" >
+    </tr>
+</tbody>
